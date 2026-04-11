@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Контакты — FORMA Studio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <!-- RobotMIA Widget -->
+  <script src="https://chat-dev.robotmia.ru/api/widget/mB58IG0XsrcY33AKE8PPjbnkeQW4ZOfR"></script>
+</head>
+<body>
+
+<!-- ── НАВИГАЦИЯ ── -->
+<nav class="nav">
+  <a href="index.html" class="nav-logo">FORMA<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="portfolio.html">Портфолио</a></li>
+    <li><a href="services.html">Услуги</a></li>
+    <li><a href="about.html">О нас</a></li>
+    <li><a href="contact.html" class="active">Контакты</a></li>
+  </ul>
+  <div class="nav-divider"></div>
+  <span class="nav-widget-label">Чат</span>
+  <span class="w-dot" id="navDot" style="margin-right:10px"></span>
+  <button class="btn-nav" onclick="safeOpen('v1')" title="showChatWindow()">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+    Чат v1
+  </button>
+  <button class="btn-nav v2" onclick="safeOpen('v2')" style="margin-left:6px" title="showChatWindow1()">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+    Чат v2
+  </button>
+</nav>
+
+<main>
+
+  <div class="page-header">
+    <p class="section-label">Свяжитесь с нами</p>
+    <h1>Контакты</h1>
+    <p>Готовы обсудить проект? Напишите нам — ответим в течение одного рабочего дня.</p>
+  </div>
+
+  <!-- ── КОНТАКТЫ + ФОРМА ── -->
+  <section>
+    <div style="display:grid; grid-template-columns:1fr 1.5fr; gap:64px; align-items:start;">
+
+      <!-- Инфо -->
+      <div>
+        <p class="section-label">Реквизиты</p>
+        <h2 style="font-size:32px; margin-bottom:28px">Всегда<br>на связи</h2>
+
+        <div style="display:flex; flex-direction:column; gap:12px; margin-bottom:32px">
+          <div class="info-card">
+            <div class="info-card-icon">📍</div>
+            <h4>Офис</h4>
+            <p>Москва, Пресненская наб., 8</p>
+            <span>Башня Москва-Сити, этаж 22</span>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon">📬</div>
+            <h4>Почта</h4>
+            <p><a href="mailto:hello@forma.studio" style="color:var(--accent); text-decoration:none">hello@forma.studio</a></p>
+            <span>Для всех вопросов</span>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon">📞</div>
+            <h4>Телефон</h4>
+            <p><a href="tel:+74951234567" style="color:var(--text); text-decoration:none">+7 (495) 123-45-67</a></p>
+            <span>Пн–Пт, 10:00–19:00 МСК</span>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon">✈</div>
+            <h4>Telegram</h4>
+            <p><a href="#" style="color:var(--accent); text-decoration:none">@forma_studio</a></p>
+            <span>Отвечаем быстро</span>
+          </div>
+        </div>
+
+        <div style="background:var(--card); border:1px solid var(--border); border-radius:var(--r-lg); padding:24px;">
+          <h4 style="font-family:var(--f-display); font-size:16px; font-weight:700; color:var(--text); margin-bottom:12px">Работаем с клиентами из</h4>
+          <div style="display:flex; gap:8px; flex-wrap:wrap">
+            <span class="tag green">Москва</span>
+            <span class="tag green">Санкт-Петербург</span>
+            <span class="tag">Вся Россия</span>
+            <span class="tag">Европа</span>
+            <span class="tag">ОАЭ</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Форма -->
+      <div>
+        <p class="section-label">Форма обратной связи</p>
+        <h2 style="font-size:32px; margin-bottom:8px">Расскажите о проекте</h2>
+        <p style="font-size:14px; color:var(--muted2); margin-bottom:0">Заполните форму, и мы свяжемся с вами в ближайшее время.</p>
+
+        <form id="contactForm" class="form-grid" onsubmit="handleSubmit(event)">
+          <div class="form-group">
+            <label for="name">Ваше имя *</label>
+            <input type="text" id="name" name="name" placeholder="Иван Иванов" required/>
+          </div>
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" placeholder="ivan@company.ru" required/>
+          </div>
+          <div class="form-group">
+            <label for="company">Компания</label>
+            <input type="text" id="company" name="company" placeholder="ООО «Пример»"/>
+          </div>
+          <div class="form-group">
+            <label for="budget">Бюджет</label>
+            <select id="budget" name="budget">
+              <option value="">Выберите диапазон</option>
+              <option>до 100 000 ₽</option>
+              <option>100 000 — 250 000 ₽</option>
+              <option>250 000 — 500 000 ₽</option>
+              <option>от 500 000 ₽</option>
+              <option>Обсудим</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="service">Услуга</label>
+            <select id="service" name="service">
+              <option value="">Выберите услугу</option>
+              <option>Веб-дизайн</option>
+              <option>Брендинг</option>
+              <option>Разработка</option>
+              <option>Дизайн-система</option>
+              <option>UX-исследование</option>
+              <option>Всё сразу / Обсудим</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="deadline">Дедлайн</label>
+            <input type="text" id="deadline" name="deadline" placeholder="Например: 3 месяца"/>
+          </div>
+          <div class="form-group full">
+            <label for="message">Описание задачи *</label>
+            <textarea id="message" name="message" placeholder="Расскажите о проекте: что нужно сделать, для кого, какие цели преследует..." required></textarea>
+          </div>
+          <div class="form-group full" style="flex-direction:row; align-items:center; gap:12px; justify-content:space-between; flex-wrap:wrap">
+            <p style="font-size:12px; color:var(--muted); max-width:320px; line-height:1.55">
+              Нажимая кнопку, вы соглашаетесь с политикой обработки персональных данных.
+            </p>
+            <button type="submit" class="btn-primary" id="submitBtn" style="white-space:nowrap">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+              Отправить заявку
+            </button>
+          </div>
+        </form>
+
+        <div id="formSuccess" style="display:none; background:var(--accent-dim); border:1px solid rgba(56,245,200,.25); border-radius:var(--r-lg); padding:32px; text-align:center; margin-top:16px;">
+          <div style="font-size:40px; margin-bottom:12px">✅</div>
+          <h3 style="font-family:var(--f-display); font-size:22px; font-weight:700; color:var(--text); margin-bottom:8px">Заявка отправлена!</h3>
+          <p style="font-size:14px; color:var(--muted2)">Мы свяжемся с вами в течение одного рабочего дня.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ── ТЕСТ ВИДЖЕТА ── -->
+  <section>
+    <p class="section-label" style="color:var(--accent3)">Dev Tools</p>
+    <h2 style="margin-bottom:8px">Тест виджета RobotMIA</h2>
+    <p style="font-size:14px; color:var(--muted2); margin-bottom:20px">
+      Инструменты для проверки работоспособности виджета на этой странице.
+    </p>
+
+    <!-- Статус -->
+    <div class="widget-panel" id="widgetPanel">
+      <div class="w-status-group">
+        <span class="w-dot" id="wDot"></span>
+        <div class="w-status-text">
+          <strong>Статус:</strong> <span id="wStatusText">проверяю…</span>
+        </div>
+        <span style="font-family:var(--f-mono); font-size:10px; color:var(--muted); margin-left:8px">window.RobotMia</span>
+      </div>
+      <button class="w-recheck" id="recheckBtn">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/></svg>
+        Перепроверить
+      </button>
+    </div>
+
+    <!-- Кнопки теста -->
+    <div class="test-grid">
+      <button class="test-btn teal c6" id="openV1Btn">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        RobotMia.showChatWindow() — Чат v1
+      </button>
+      <button class="test-btn coral c6" id="openV2Btn">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        RobotMia.showChatWindow1() — Чат v2
+      </button>
+      <button class="test-btn c4" id="logBtn">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        Лог в консоль
+      </button>
+      <button class="test-btn c4" id="infoBtn">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+        Свойства объекта
+      </button>
+      <button class="test-btn red c4" id="clearBtn">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/></svg>
+        Очистить лог
+      </button>
+      <button class="test-btn c12" id="helpBtn" style="color:var(--muted2); font-weight:400">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+        Как работают два варианта чата?
+      </button>
+    </div>
+
+    <!-- Консоль лога -->
+    <div class="console-panel">
+      <div class="console-header">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--muted)"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        <span>Widget Console</span>
+        <span style="margin-left:auto; opacity:.5">FORMA Dev Tools v1.0</span>
+      </div>
+      <div class="console-body" id="consoleBody">
+        <div class="log-line info">// Готов к тестированию виджета RobotMIA</div>
+        <div class="log-line info">// Нажмите кнопки выше для проверки</div>
+      </div>
+    </div>
+
+    <!-- Подсказка -->
+    <div style="margin-top:14px; padding:16px 20px; background:rgba(56,245,200,.04); border:1px dashed rgba(56,245,200,.15); border-radius:12px;">
+      <p style="font-family:var(--f-mono); font-size:11.5px; color:var(--muted2); line-height:1.7; margin:0">
+        <span style="color:var(--accent)">// Как подключён виджет:</span><br>
+        Скрипт вставлен в <span style="color:var(--accent3)">&lt;head&gt;</span> каждой страницы сайта:<br>
+        <span style="color:var(--muted2)">&lt;script src="https://chat-dev.robotmia.ru/api/widget/mB58IG..."&gt;&lt;/script&gt;</span><br><br>
+        <span style="color:var(--accent)">// Два варианта открытия чата:</span><br>
+        v1 → <span style="color:#f0c330">RobotMia.showChatWindow()</span> — стандартное окно чата<br>
+        v2 → <span style="color:var(--accent2)">RobotMia.showChatWindow1()</span> — альтернативный вариант (с цифрой 1)
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a href="index.html" class="footer-logo">FORMA<span>.</span></a>
+      <p>Студия цифрового дизайна. Создаём сайты, брендинг и интерфейсы для бизнеса, которому важен результат.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Услуги</h4>
+      <ul>
+        <li><a href="services.html">Веб-дизайн</a></li>
+        <li><a href="services.html">Брендинг</a></li>
+        <li><a href="services.html">Разработка</a></li>
+        <li><a href="services.html">UX-исследования</a></li>
+        <li><a href="services.html">Дизайн-система</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Компания</h4>
+      <ul>
+        <li><a href="about.html">О студии</a></li>
+        <li><a href="portfolio.html">Портфолио</a></li>
+        <li><a href="about.html#team">Команда</a></li>
+        <li><a href="contact.html">Контакты</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Связь</h4>
+      <ul>
+        <li><a href="mailto:hello@forma.studio">hello@forma.studio</a></li>
+        <li><a href="tel:+74951234567">+7 (495) 123-45-67</a></li>
+        <li><a href="#">Telegram</a></li>
+        <li><a href="#">Behance</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2024 FORMA Studio — Студия цифрового дизайна, Москва</p>
+    <div class="footer-social">
+      <a href="#" title="Telegram">✈</a>
+      <a href="#" title="Behance">𝐁</a>
+      <a href="#" title="VC.ru">В</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // ── Helpers ──
+  const consoleBody = document.getElementById('consoleBody');
+  const wDot = document.getElementById('wDot');
+  const wStatusText = document.getElementById('wStatusText');
+  const navDot = document.getElementById('navDot');
+
+  function hasWidget() {
+    return !!(window.RobotMia && typeof window.RobotMia.showChatWindow === 'function');
+  }
+
+  function log(msg, type = 'info') {
+    const line = document.createElement('div');
+    line.className = 'log-line ' + type;
+    const now = new Date().toLocaleTimeString('ru-RU', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+    line.textContent = `[${now}] ${msg}`;
+    consoleBody.appendChild(line);
+    consoleBody.scrollTop = consoleBody.scrollHeight;
+  }
+
+  function setStatus(ok) {
+    const dot = wDot;
+    const navD = navDot;
+    if (ok) {
+      dot.className = 'w-dot ok';
+      if (navD) { navD.className = 'w-dot ok'; }
+      wStatusText.textContent = 'RobotMia найден ✅';
+      wStatusText.style.color = 'var(--accent)';
+    } else {
+      dot.className = 'w-dot err';
+      if (navD) { navD.className = 'w-dot err'; }
+      wStatusText.textContent = 'RobotMia не найден ❌';
+      wStatusText.style.color = '#ff6b6b';
+    }
+  }
+
+  function recheck() {
+    const ok = hasWidget();
+    setStatus(ok);
+    log(ok
+      ? 'window.RobotMia найден. showChatWindow: ' + typeof window.RobotMia?.showChatWindow
+      : 'window.RobotMia не определён. Возможно, виджет ещё загружается.', ok ? 'ok' : 'warn');
+  }
+
+  function safeOpen(variant) {
+    if (!hasWidget()) {
+      log('Ошибка: window.RobotMia не найден. Попробуйте перепроверить статус.', 'err');
+      return;
+    }
+    if (variant === 'v2') {
+      log('Вызов: RobotMia.showChatWindow1()', 'ok');
+      try { window.RobotMia.showChatWindow1(); }
+      catch(e) { log('Ошибка showChatWindow1: ' + e.message, 'err'); }
+    } else {
+      log('Вызов: RobotMia.showChatWindow()', 'ok');
+      try { window.RobotMia.showChatWindow(); }
+      catch(e) { log('Ошибка showChatWindow: ' + e.message, 'err'); }
+    }
+  }
+
+  // ── Events ──
+  document.getElementById('recheckBtn').addEventListener('click', () => {
+    log('--- Перепроверка статуса виджета ---', 'info');
+    recheck();
+  });
+
+  document.getElementById('openV1Btn').addEventListener('click', () => safeOpen('v1'));
+  document.getElementById('openV2Btn').addEventListener('click', () => safeOpen('v2'));
+
+  document.getElementById('logBtn').addEventListener('click', () => {
+    console.log('[FORMA Dev] window.RobotMia =', window.RobotMia);
+    console.log('[FORMA Dev] hasWidget() =', hasWidget());
+    if (hasWidget()) {
+      console.log('[FORMA Dev] Методы объекта:', Object.keys(window.RobotMia));
+    }
+    log('Объект window.RobotMia выведен в консоль браузера (F12 → Console)', 'info');
+  });
+
+  document.getElementById('infoBtn').addEventListener('click', () => {
+    if (!hasWidget()) {
+      log('Виджет не найден — нечего инспектировать.', 'err');
+      return;
+    }
+    const keys = Object.keys(window.RobotMia);
+    log('Свойства window.RobotMia: [' + keys.join(', ') + ']', 'ok');
+    log('showChatWindow: ' + typeof window.RobotMia.showChatWindow, 'info');
+    if (window.RobotMia.showChatWindow1 !== undefined) {
+      log('showChatWindow1: ' + typeof window.RobotMia.showChatWindow1, 'info');
+    } else {
+      log('showChatWindow1: undefined (метод отсутствует)', 'warn');
+    }
+  });
+
+  document.getElementById('clearBtn').addEventListener('click', () => {
+    consoleBody.innerHTML = '<div class="log-line info">// Лог очищен</div>';
+    console.clear();
+  });
+
+  document.getElementById('helpBtn').addEventListener('click', () => {
+    log('--- Справка по вариантам чата ---', 'info');
+    log('v1 → RobotMia.showChatWindow()  — стандартное окно чата', 'info');
+    log('v2 → RobotMia.showChatWindow1() — альтернативный вариант (суффикс 1)', 'warn');
+    log('Оба метода доступны через кнопки в навигации сайта (верхняя панель)', 'info');
+  });
+
+  // ── Форма ──
+  function handleSubmit(e) {
+    e.preventDefault();
+    const btn = document.getElementById('submitBtn');
+    btn.textContent = 'Отправка…'; btn.disabled = true;
+    setTimeout(() => {
+      document.getElementById('contactForm').style.display = 'none';
+      document.getElementById('formSuccess').style.display = 'block';
+      log('[Форма] Заявка успешно отправлена', 'ok');
+    }, 1200);
+  }
+
+  // ── Init ──
+  recheck();
+  setTimeout(recheck, 2500);
+</script>
+
+</body>
+</html>

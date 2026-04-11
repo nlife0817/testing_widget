@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Портфолио — FORMA Studio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <!-- RobotMIA Widget -->
+  <script src="https://chat-dev.robotmia.ru/api/widget/mB58IG0XsrcY33AKE8PPjbnkeQW4ZOfR"></script>
+</head>
+<body>
+
+<!-- ── НАВИГАЦИЯ ── -->
+<nav class="nav">
+  <a href="index.html" class="nav-logo">FORMA<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="portfolio.html" class="active">Портфолио</a></li>
+    <li><a href="services.html">Услуги</a></li>
+    <li><a href="about.html">О нас</a></li>
+    <li><a href="contact.html">Контакты</a></li>
+  </ul>
+  <div class="nav-divider"></div>
+  <span class="nav-widget-label">Чат</span>
+  <span class="w-dot" id="navDot" style="margin-right:10px"></span>
+  <button class="btn-nav" onclick="safeOpen('v1')" title="showChatWindow()">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+    Чат v1
+  </button>
+  <button class="btn-nav v2" onclick="safeOpen('v2')" style="margin-left:6px" title="showChatWindow1()">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+    Чат v2
+  </button>
+</nav>
+
+<main>
+
+  <div class="page-header">
+    <p class="section-label">Работы</p>
+    <h1>Портфолио</h1>
+    <p>140+ реализованных проектов за 7 лет. Показываем только самое интересное.</p>
+  </div>
+
+  <!-- ── ФИЛЬТР ── -->
+  <section style="padding-bottom:0">
+    <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+      <button class="filter-btn active" data-filter="all">Все</button>
+      <button class="filter-btn" data-filter="web">Веб-дизайн</button>
+      <button class="filter-btn" data-filter="brand">Брендинг</button>
+      <button class="filter-btn" data-filter="dev">Разработка</button>
+      <button class="filter-btn" data-filter="ux">UX</button>
+    </div>
+  </section>
+
+  <!-- ── ПРОЕКТЫ ── -->
+  <section>
+    <div class="portfolio-grid" id="portfolioGrid">
+
+      <!-- Rive Coffee -->
+      <div class="p-item lg" data-cat="web brand">
+        <div class="p-thumb">
+          <div class="p-thumb-inner" style="background: linear-gradient(135deg, #0d1e3c, #1a3870)">☕</div>
+        </div>
+        <div class="p-overlay">
+          <div class="p-tag">Брендинг · Веб-дизайн</div>
+          <div class="p-name">Rive Coffee</div>
+        </div>
+        <div class="p-bottom">
+          <div>
+            <h3>Rive Coffee</h3>
+            <span>Брендинг · Веб-дизайн · 2024</span>
+          </div>
+          <span class="tag green">Кейс года</span>
+        </div>
+      </div>
+
+      <!-- Архитектум -->
+      <div class="p-item md" data-cat="web dev">
+        <div class="p-thumb">
+          <div class="p-thumb-inner" style="background: linear-gradient(135deg, #180e30, #38156a)">🏛</div>
+        </div>
+        <div class="p-overlay">
+          <div class="p-tag">Веб-дизайн · Разработка</div>
+          <div class="p-name">Архитектум</div>
+        </div>
+        <div class="p-bottom">
+          <div>
+            <h3>Архитектум</h3>
+            <span>Веб-дизайн · Разработка · 2024</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Скай Медика -->
+      <div class="p-item sm" data-cat="ux web">
+        <div class="p-thumb">
+          <div class="p-thumb-inner" style="background: linear-gradient(135deg, #0c2e1a, #155a30)">🏥</div>
+        </div>
+        <div class="p-overlay">
+          <div class="p-tag">UX · Веб-дизайн</div>
+          <div class="p-name">Скай Медика</div>
+        </div>
+        <div class="p-bottom">
+          <div>
+            <h3>Скай Медика</h3>
+            <span>UX · Веб-дизайн · 2023</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Neon Digital -->
+      <div class="p-item md" data-cat="brand">
+        <div class="p-thumb">
+          <div class="p-thumb-inner" style="background: linear-gradient(135deg, #2a1800, #5c3500)">⚡</div>
+        </div>
+        <div class="p-overlay">
+          <div class="p-tag">Брендинг · Дизайн-система</div>
+          <div class="p-name">Neon Digital</div>
+        </div>
+        <div class="p-bottom">
+          <div>
+            <h3>Neon Digital</h3>
+            <span>Брендинг · Дизайн-система · 2023</span>
+          </div>
+          <span class="tag orange">HOD</span>
+        </div>
+      </div>
+
+      <!-- ТерраМаркет -->
+      <div class="p-item sm" data-cat="dev web">
+        <div class="p-thumb">
+          <div class="p-thumb-inner" style="background: linear-gradient(135deg, #1e1400, #3a2800)">🌾</div>
+        </div>
+        <div class="p-overlay">
+          <div class="p-tag">E-commerce · Разработка</div>
+          <div class="p-name">ТерраМаркет</div>
+        </div>
+        <div class="p-bottom">
+          <div>
+            <h3>ТерраМаркет</h3>
+            <span>E-commerce · Разработка · 2023</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Люмен Арт -->
+      <div class="p-item full" data-cat="web ux">
+        <div class="p-thumb">
+          <div class="p-thumb-inner" style="background: linear-gradient(135deg, #1e0630, #3a0e5a); font-size:80px">🎨</div>
+        </div>
+        <div class="p-overlay">
+          <div class="p-tag">UX · Веб-дизайн · Разработка</div>
+          <div class="p-name">Люмен Арт — Галерея современного искусства</div>
+        </div>
+        <div class="p-bottom">
+          <div>
+            <h3>Люмен Арт</h3>
+            <span>UX · Веб-дизайн · Разработка · 2023</span>
+          </div>
+          <span class="tag yellow">Awwwards HOD</span>
+        </div>
+      </div>
+
+      <!-- Pulse Fitness -->
+      <div class="p-item sm" data-cat="brand web">
+        <div class="p-thumb">
+          <div class="p-thumb-inner" style="background: linear-gradient(135deg, #200a0a, #4a1515)">💪</div>
+        </div>
+        <div class="p-overlay">
+          <div class="p-tag">Брендинг · Мобильное приложение</div>
+          <div class="p-name">Pulse Fitness</div>
+        </div>
+        <div class="p-bottom">
+          <div>
+            <h3>Pulse Fitness</h3>
+            <span>Брендинг · Мобайл · 2022</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- КосмоТур -->
+      <div class="p-item md" data-cat="web ux">
+        <div class="p-thumb">
+          <div class="p-thumb-inner" style="background: linear-gradient(135deg, #080e28, #1025aa)">🚀</div>
+        </div>
+        <div class="p-overlay">
+          <div class="p-tag">UX · Веб-дизайн</div>
+          <div class="p-name">КосмоТур</div>
+        </div>
+        <div class="p-bottom">
+          <div>
+            <h3>КосмоТур</h3>
+            <span>UX · Веб-дизайн · 2022</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ЭкоДом -->
+      <div class="p-item lg" data-cat="web dev brand">
+        <div class="p-thumb">
+          <div class="p-thumb-inner" style="background: linear-gradient(135deg, #081a10, #0e3a20)">🌿</div>
+        </div>
+        <div class="p-overlay">
+          <div class="p-tag">Брендинг · Веб · Разработка</div>
+          <div class="p-name">ЭкоДом — девелопер</div>
+        </div>
+        <div class="p-bottom">
+          <div>
+            <h3>ЭкоДом</h3>
+            <span>Брендинг · Веб · Разработка · 2022</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- ── CTA ── -->
+<div class="cta-section">
+  <p class="section-label" style="justify-content:center">Ваш проект</p>
+  <h2>Хотите попасть<br>в наше портфолио?</h2>
+  <p>Расскажите о своей задаче, и мы предложим решение.</p>
+  <div class="cta-btns">
+    <a href="contact.html" class="btn-primary">Обсудить проект</a>
+    <button class="btn-secondary" onclick="safeOpen('v1')">Написать в чат</button>
+  </div>
+</div>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a href="index.html" class="footer-logo">FORMA<span>.</span></a>
+      <p>Студия цифрового дизайна. Создаём сайты, брендинг и интерфейсы для бизнеса, которому важен результат.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Услуги</h4>
+      <ul>
+        <li><a href="services.html">Веб-дизайн</a></li>
+        <li><a href="services.html">Брендинг</a></li>
+        <li><a href="services.html">Разработка</a></li>
+        <li><a href="services.html">UX-исследования</a></li>
+        <li><a href="services.html">Дизайн-система</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Компания</h4>
+      <ul>
+        <li><a href="about.html">О студии</a></li>
+        <li><a href="portfolio.html">Портфолио</a></li>
+        <li><a href="about.html#team">Команда</a></li>
+        <li><a href="contact.html">Контакты</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Связь</h4>
+      <ul>
+        <li><a href="mailto:hello@forma.studio">hello@forma.studio</a></li>
+        <li><a href="tel:+74951234567">+7 (495) 123-45-67</a></li>
+        <li><a href="#">Telegram</a></li>
+        <li><a href="#">Behance</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2024 FORMA Studio — Студия цифрового дизайна, Москва</p>
+    <div class="footer-social">
+      <a href="#" title="Telegram">✈</a>
+      <a href="#" title="Behance">𝐁</a>
+      <a href="#" title="VC.ru">В</a>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .filter-btn {
+    padding: 8px 16px;
+    border-radius: 9px;
+    border: 1px solid var(--border2);
+    background: transparent;
+    color: var(--muted2);
+    font-family: var(--f-body);
+    font-size: 13px; font-weight: 500;
+    cursor: pointer;
+    transition: var(--t);
+  }
+  .filter-btn:hover { color: var(--text); border-color: var(--border2); background: rgba(255,255,255,.05); }
+  .filter-btn.active { background: var(--accent-dim); border-color: rgba(56,245,200,.3); color: var(--accent); }
+  .p-item.hidden { display: none; }
+</style>
+
+<script>
+  function hasWidget() {
+    return !!(window.RobotMia && typeof window.RobotMia.showChatWindow === 'function');
+  }
+  function updateDot() {
+    const dot = document.getElementById('navDot');
+    if (!dot) return;
+    dot.classList.toggle('ok', hasWidget());
+    dot.classList.toggle('err', !hasWidget());
+  }
+  function safeOpen(variant) {
+    if (!hasWidget()) { alert('Виджет RobotMia пока не загружен.'); return; }
+    variant === 'v2' ? window.RobotMia.showChatWindow1() : window.RobotMia.showChatWindow();
+  }
+  updateDot();
+  setTimeout(updateDot, 2000);
+
+  // Filter logic
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.dataset.filter;
+      document.querySelectorAll('.p-item').forEach(item => {
+        if (filter === 'all') { item.classList.remove('hidden'); return; }
+        const cats = item.dataset.cat || '';
+        item.classList.toggle('hidden', !cats.includes(filter));
+      });
+    });
+  });
+</script>
+
+</body>
+</html>

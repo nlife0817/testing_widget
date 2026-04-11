@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>О нас — FORMA Studio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <!-- RobotMIA Widget -->
+  <script src="https://chat-dev.robotmia.ru/api/widget/mB58IG0XsrcY33AKE8PPjbnkeQW4ZOfR"></script>
+</head>
+<body>
+
+<!-- ── НАВИГАЦИЯ ── -->
+<nav class="nav">
+  <a href="index.html" class="nav-logo">FORMA<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="portfolio.html">Портфолио</a></li>
+    <li><a href="services.html">Услуги</a></li>
+    <li><a href="about.html" class="active">О нас</a></li>
+    <li><a href="contact.html">Контакты</a></li>
+  </ul>
+  <div class="nav-divider"></div>
+  <span class="nav-widget-label">Чат</span>
+  <span class="w-dot" id="navDot" style="margin-right:10px"></span>
+  <button class="btn-nav" onclick="safeOpen('v1')" title="showChatWindow()">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+    Чат v1
+  </button>
+  <button class="btn-nav v2" onclick="safeOpen('v2')" style="margin-left:6px" title="showChatWindow1()">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+    Чат v2
+  </button>
+</nav>
+
+<main>
+
+  <div class="page-header">
+    <p class="section-label">О студии</p>
+    <h1>Мы — FORMA</h1>
+    <p>Студия цифрового дизайна из Москвы. Создаём продукты, которые решают реальные бизнес-задачи.</p>
+  </div>
+
+  <!-- ── О СТУДИИ ── -->
+  <section>
+    <div class="about-intro">
+      <div class="about-intro-text">
+        <p class="section-label">История</p>
+        <h2>От маленькой команды<br>к признанной студии</h2>
+        <p>FORMA основана в 2018 году двумя дизайнерами — Антоном Громовым и Марией Соколовой. Начинали с небольших проектов для местного бизнеса, постепенно выстраивая репутацию студии, которой можно доверять.</p>
+        <p>Сегодня в команде 12 специалистов: дизайнеры, разработчики, UX-исследователи и менеджеры проектов. Мы работаем с клиентами по всей России, а также с компаниями из Европы и ОАЭ.</p>
+        <p>Наша миссия простая: делать цифровые продукты, которые выглядят хорошо и работают ещё лучше. Мы считаем, что красота и функциональность — это не противоречие, а единое целое.</p>
+        <a href="contact.html" class="btn-primary" style="margin-top:8px; display:inline-flex">Обсудить проект →</a>
+      </div>
+      <div class="about-values">
+        <div class="value-item">
+          <div class="value-icon">🎯</div>
+          <div>
+            <h4>Результат важнее процесса</h4>
+            <p>Красивый дизайн — это хорошо. Красивый дизайн, который приносит заявки и увеличивает продажи — это наша цель.</p>
+          </div>
+        </div>
+        <div class="value-item">
+          <div class="value-icon">🔍</div>
+          <div>
+            <h4>Честность и прозрачность</h4>
+            <p>Если задача нам не по силам, скажем об этом сразу. Если видим риски — предупредим. Никаких сюрпризов.</p>
+          </div>
+        </div>
+        <div class="value-item">
+          <div class="value-icon">⚡</div>
+          <div>
+            <h4>Скорость без потери качества</h4>
+            <p>Отлаженные процессы позволяют нам работать быстро. Средний срок проекта — 3–6 недель.</p>
+          </div>
+        </div>
+        <div class="value-item">
+          <div class="value-icon">🤝</div>
+          <div>
+            <h4>Клиент — часть команды</h4>
+            <p>Мы не работаем "в вакууме". Регулярные синки, открытый доступ к файлам, обратная связь на каждом этапе.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ── КОМАНДА ── -->
+  <section id="team">
+    <p class="section-label">Люди</p>
+    <h2>Команда</h2>
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="team-avatar" style="background: linear-gradient(135deg, #1a2e50, #0e1d38)">👨‍💻</div>
+        <div class="team-info">
+          <h3>Антон Громов</h3>
+          <div class="role">Со-основатель, Арт-директор</div>
+          <p>10 лет в дизайне. Отвечает за визуальное направление студии и стратегию проектов.</p>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar" style="background: linear-gradient(135deg, #2e1a40, #1d0e2e)">👩‍🎨</div>
+        <div class="team-info">
+          <h3>Мария Соколова</h3>
+          <div class="role">Со-основатель, UX Lead</div>
+          <p>Специалист по пользовательскому опыту. Проводит исследования и прототипирует продукты.</p>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar" style="background: linear-gradient(135deg, #1a3520, #0e2015)">👨‍💼</div>
+        <div class="team-info">
+          <h3>Дмитрий Ковалёв</h3>
+          <div class="role">Lead Developer</div>
+          <p>Full-stack разработчик. React, Next.js, Node. Отвечает за техническую реализацию проектов.</p>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar" style="background: linear-gradient(135deg, #3a2010, #281508)">👩‍💻</div>
+        <div class="team-info">
+          <h3>Елена Петрова</h3>
+          <div class="role">Project Manager</div>
+          <p>Держит все проекты под контролем. Ни один дедлайн не был нарушен с её приходом.</p>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar" style="background: linear-gradient(135deg, #101a35, #0a1022)">🧑‍🎨</div>
+        <div class="team-info">
+          <h3>Алексей Иванов</h3>
+          <div class="role">UI Designer</div>
+          <p>Специализируется на сложных интерфейсах для SaaS-продуктов и корпоративных систем.</p>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar" style="background: linear-gradient(135deg, #301520, #200a14)">👩‍🔬</div>
+        <div class="team-info">
+          <h3>Наталья Кузнецова</h3>
+          <div class="role">UX Researcher</div>
+          <p>Проводит качественные и количественные исследования. Переводит данные в дизайн-решения.</p>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar" style="background: linear-gradient(135deg, #1a3030, #0e2020)">🧑‍💻</div>
+        <div class="team-info">
+          <h3>Сергей Лебедев</h3>
+          <div class="role">Frontend Developer</div>
+          <p>Превращает макеты в пиксель-перфект код. Влюблён в CSS-анимации и производительность.</p>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar" style="background: linear-gradient(135deg, #28200a, #1c1506)">👩‍💼</div>
+        <div class="team-info">
+          <h3>Анна Морозова</h3>
+          <div class="role">Brand Designer</div>
+          <p>Специалист по брендингу с опытом работы в крупных рекламных агентствах Москвы.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ── НАГРАДЫ ── -->
+  <section>
+    <p class="section-label">Признание</p>
+    <h2>Награды и публикации</h2>
+    <div class="awards-list">
+      <div class="award-item">
+        <div class="award-icon">🏆</div>
+        <div>
+          <div class="award-name">Awwwards — Honorable Mention</div>
+          <div class="award-meta">Проект Люмен Арт — галерея современного искусства</div>
+        </div>
+        <div class="award-year">2024</div>
+      </div>
+      <div class="award-item">
+        <div class="award-icon">⭐</div>
+        <div>
+          <div class="award-name">CSS Design Awards — Special Kudos</div>
+          <div class="award-meta">Проект КосмоТур — сервис туристических путешествий</div>
+        </div>
+        <div class="award-year">2023</div>
+      </div>
+      <div class="award-item">
+        <div class="award-icon">🎨</div>
+        <div>
+          <div class="award-name">Behance — Featured Project</div>
+          <div class="award-meta">Брендинг Neon Digital — технологический стартап</div>
+        </div>
+        <div class="award-year">2023</div>
+      </div>
+      <div class="award-item">
+        <div class="award-icon">📰</div>
+        <div>
+          <div class="award-name">Публикация в журнале Digital Arts</div>
+          <div class="award-meta">Статья "Как дизайн увеличивает конверсию в 3 раза"</div>
+        </div>
+        <div class="award-year">2023</div>
+      </div>
+      <div class="award-item">
+        <div class="award-icon">🥇</div>
+        <div>
+          <div class="award-name">Tagline Awards — Лучший корпоративный сайт</div>
+          <div class="award-meta">Сайт для архитектурного бюро Архитектум</div>
+        </div>
+        <div class="award-year">2022</div>
+      </div>
+      <div class="award-item">
+        <div class="award-icon">💫</div>
+        <div>
+          <div class="award-name">Рейтинг Ruward — топ-30 веб-студий России</div>
+          <div class="award-meta">Категория "Лучший веб-дизайн", национальный рейтинг</div>
+        </div>
+        <div class="award-year">2022</div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ── CTA ── -->
+<div class="cta-section">
+  <p class="section-label" style="justify-content:center">Присоединяйтесь</p>
+  <h2>Хотите работать<br>с нами?</h2>
+  <p>Ищем талантливых дизайнеров и разработчиков в команду. Пишите нам.</p>
+  <div class="cta-btns">
+    <a href="contact.html" class="btn-primary">Связаться с нами</a>
+    <button class="btn-secondary" onclick="safeOpen('v1')">Написать в чат</button>
+  </div>
+</div>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a href="index.html" class="footer-logo">FORMA<span>.</span></a>
+      <p>Студия цифрового дизайна. Создаём сайты, брендинг и интерфейсы для бизнеса, которому важен результат.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Услуги</h4>
+      <ul>
+        <li><a href="services.html">Веб-дизайн</a></li>
+        <li><a href="services.html">Брендинг</a></li>
+        <li><a href="services.html">Разработка</a></li>
+        <li><a href="services.html">UX-исследования</a></li>
+        <li><a href="services.html">Дизайн-система</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Компания</h4>
+      <ul>
+        <li><a href="about.html">О студии</a></li>
+        <li><a href="portfolio.html">Портфолио</a></li>
+        <li><a href="about.html#team">Команда</a></li>
+        <li><a href="contact.html">Контакты</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Связь</h4>
+      <ul>
+        <li><a href="mailto:hello@forma.studio">hello@forma.studio</a></li>
+        <li><a href="tel:+74951234567">+7 (495) 123-45-67</a></li>
+        <li><a href="#">Telegram</a></li>
+        <li><a href="#">Behance</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2024 FORMA Studio — Студия цифрового дизайна, Москва</p>
+    <div class="footer-social">
+      <a href="#" title="Telegram">✈</a>
+      <a href="#" title="Behance">𝐁</a>
+      <a href="#" title="VC.ru">В</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function hasWidget() { return !!(window.RobotMia && typeof window.RobotMia.showChatWindow === 'function'); }
+  function updateDot() {
+    const dot = document.getElementById('navDot');
+    if (!dot) return;
+    dot.classList.toggle('ok', hasWidget());
+    dot.classList.toggle('err', !hasWidget());
+  }
+  function safeOpen(variant) {
+    if (!hasWidget()) { alert('Виджет RobotMia пока не загружен.'); return; }
+    variant === 'v2' ? window.RobotMia.showChatWindow1() : window.RobotMia.showChatWindow();
+  }
+  updateDot(); setTimeout(updateDot, 2000);
+</script>
+
+</body>
+</html>

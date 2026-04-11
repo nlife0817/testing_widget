@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>FORMA — Студия цифрового дизайна</title>
+  <link rel="stylesheet" href="style.css"/>
+  <!-- RobotMIA Widget -->
+  <script src="https://chat-dev.robotmia.ru/api/widget/mB58IG0XsrcY33AKE8PPjbnkeQW4ZOfR"></script>
+</head>
+<body>
+
+<!-- ── НАВИГАЦИЯ ── -->
+<nav class="nav">
+  <a href="index.html" class="nav-logo">FORMA<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Главная</a></li>
+    <li><a href="portfolio.html">Портфолио</a></li>
+    <li><a href="services.html">Услуги</a></li>
+    <li><a href="about.html">О нас</a></li>
+    <li><a href="contact.html">Контакты</a></li>
+  </ul>
+  <div class="nav-divider"></div>
+  <span class="nav-widget-label">Чат</span>
+  <span class="w-dot" id="navDot" style="margin-right:10px"></span>
+  <button class="btn-nav" onclick="safeOpen('v1')" title="showChatWindow()">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+    </svg>
+    Чат v1
+  </button>
+  <button class="btn-nav v2" onclick="safeOpen('v2')" style="margin-left:6px" title="showChatWindow1()">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+    </svg>
+    Чат v2
+  </button>
+</nav>
+
+<main>
+
+  <!-- ── HERO ── -->
+  <div class="hero">
+    <div class="hero-grid-deco"></div>
+    <p class="hero-eyebrow">Студия цифрового дизайна · Москва</p>
+    <h1>
+      Делаем сайты,<br>
+      <em>которые продают</em>
+    </h1>
+    <p class="hero-sub">
+      Создаём цифровые продукты для бизнеса — от стратегии и дизайна до разработки и поддержки. Работаем с брендами, которым важен результат.
+    </p>
+    <div class="hero-ctas">
+      <a href="portfolio.html" class="btn-primary">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        Смотреть работы
+      </a>
+      <a href="contact.html" class="btn-secondary">Обсудить проект</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-num">7<span>+</span></div>
+        <div class="stat-label">лет на рынке</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">140<span>+</span></div>
+        <div class="stat-label">проектов</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">98<span>%</span></div>
+        <div class="stat-label">довольных клиентов</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">12<span>×</span></div>
+        <div class="stat-label">средний рост конверсии</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ── УСЛУГИ ── -->
+  <section>
+    <p class="section-label fade-up">Что мы делаем</p>
+    <h2 class="fade-up d1">Полный цикл создания<br>цифрового продукта</h2>
+
+    <div class="services-grid">
+      <div class="service-card fade-up d1">
+        <div class="service-icon">✦</div>
+        <span class="service-num">01</span>
+        <h3>Веб-дизайн</h3>
+        <p>Разрабатываем уникальные интерфейсы с фокусом на конверсию и пользовательский опыт. Каждый экран продуман до пикселя.</p>
+      </div>
+      <div class="service-card fade-up d2">
+        <div class="service-icon">◈</div>
+        <span class="service-num">02</span>
+        <h3>Брендинг</h3>
+        <p>Создаём фирменный стиль, который выделяет вас среди конкурентов. Логотип, гайдлайн, носители — полный пакет.</p>
+      </div>
+      <div class="service-card fade-up d3">
+        <div class="service-icon">⟨/⟩</div>
+        <span class="service-num">03</span>
+        <h3>Разработка</h3>
+        <p>Вёрстка и фронтенд-разработка любой сложности. React, Next.js, Vue — выбираем стек под задачу.</p>
+      </div>
+      <div class="service-card fade-up d4">
+        <div class="service-icon">◎</div>
+        <span class="service-num">04</span>
+        <h3>UX-исследования</h3>
+        <p>Изучаем поведение пользователей, проводим интервью и тесты, выявляем точки роста для вашего продукта.</p>
+      </div>
+      <div class="service-card fade-up d5">
+        <div class="service-icon">⊞</div>
+        <span class="service-num">05</span>
+        <h3>Дизайн-система</h3>
+        <p>Строим масштабируемые дизайн-системы в Figma с токенами, компонентами и документацией для команды.</p>
+      </div>
+      <div class="service-card fade-up" style="animation-delay:.6s">
+        <div class="service-icon">◷</div>
+        <span class="service-num">06</span>
+        <h3>Поддержка</h3>
+        <p>Берём проект в долгосрочное сопровождение — обновления, A/B-тесты, итерации дизайна и развитие продукта.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ── ПОРТФОЛИО PREVIEW ── -->
+  <section>
+    <p class="section-label">Последние работы</p>
+    <div style="display:flex; align-items:flex-end; justify-content:space-between; gap:16px; margin-bottom:0; flex-wrap:wrap;">
+      <h2>Избранные проекты</h2>
+      <a href="portfolio.html" class="btn-secondary" style="flex-shrink:0; margin-bottom:8px">Все работы →</a>
+    </div>
+
+    <div class="portfolio-grid" style="margin-top:32px">
+      <div class="p-item lg">
+        <div class="p-thumb">
+          <div class="p-thumb-inner" style="background: linear-gradient(135deg, #0e2040, #1a3a6e)">☕</div>
+        </div>
+        <div class="p-overlay">
+          <div class="p-tag">Брендинг · Веб-дизайн</div>
+          <div class="p-name">Rive Coffee</div>
+        </div>
+        <div class="p-bottom">
+          <h3>Rive Coffee</h3>
+          <span>2024</span>
+        </div>
+      </div>
+      <div class="p-item md">
+        <div class="p-thumb">
+          <div class="p-thumb-inner" style="background: linear-gradient(135deg, #1a0e30, #38156a)">🏛</div>
+        </div>
+        <div class="p-overlay">
+          <div class="p-tag">Веб-дизайн · Разработка</div>
+          <div class="p-name">Архитектум</div>
+        </div>
+        <div class="p-bottom">
+          <h3>Архитектум</h3>
+          <span>2024</span>
+        </div>
+      </div>
+      <div class="p-item sm">
+        <div class="p-thumb">
+          <div class="p-thumb-inner" style="background: linear-gradient(135deg, #0e301e, #165a32)">🏥</div>
+        </div>
+        <div class="p-overlay">
+          <div class="p-tag">UX · Веб-дизайн</div>
+          <div class="p-name">Скай Медика</div>
+        </div>
+        <div class="p-bottom">
+          <h3>Скай Медика</h3>
+          <span>2023</span>
+        </div>
+      </div>
+      <div class="p-item md">
+        <div class="p-thumb">
+          <div class="p-thumb-inner" style="background: linear-gradient(135deg, #2a1800, #5c3500)">⚡</div>
+        </div>
+        <div class="p-overlay">
+          <div class="p-tag">Брендинг · Дизайн-система</div>
+          <div class="p-name">Neon Digital</div>
+        </div>
+        <div class="p-bottom">
+          <h3>Neon Digital</h3>
+          <span>2023</span>
+        </div>
+      </div>
+      <div class="p-item sm">
+        <div class="p-thumb">
+          <div class="p-thumb-inner" style="background: linear-gradient(135deg, #1a1200, #3a2800)">🌾</div>
+        </div>
+        <div class="p-overlay">
+          <div class="p-tag">E-commerce · Разработка</div>
+          <div class="p-name">ТерраМаркет</div>
+        </div>
+        <div class="p-bottom">
+          <h3>ТерраМаркет</h3>
+          <span>2023</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ── О СТУДИИ ── -->
+  <section>
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:center">
+      <div>
+        <p class="section-label">О студии</p>
+        <h2 style="margin-bottom:20px">Команда из 12 человек<br>с большими амбициями</h2>
+        <p style="font-size:15px; color:var(--muted2); line-height:1.75; margin-bottom:16px">
+          FORMA основана в 2018 году в Москве. Мы специализируемся на создании цифровых продуктов для среднего и крупного бизнеса — от стратегии и UX-исследований до полноценной разработки.
+        </p>
+        <p style="font-size:15px; color:var(--muted2); line-height:1.75; margin-bottom:32px">
+          Среди наших клиентов — технологические стартапы, розничные сети, медицинские центры и архитектурные бюро. Каждый проект рассматриваем как возможность создать что-то выдающееся.
+        </p>
+        <a href="about.html" class="btn-secondary">Узнать больше →</a>
+      </div>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px">
+        <div class="info-card">
+          <div class="info-card-icon">🏆</div>
+          <h4>Награды</h4>
+          <p>AWWWards HOD</p>
+          <span>2023, 2024</span>
+        </div>
+        <div class="info-card">
+          <div class="info-card-icon">📍</div>
+          <h4>Офис</h4>
+          <p>Москва</p>
+          <span>Пресненская наб., 8</span>
+        </div>
+        <div class="info-card">
+          <div class="info-card-icon">⚡</div>
+          <h4>Скорость</h4>
+          <p>2–8 недель</p>
+          <span>средний срок проекта</span>
+        </div>
+        <div class="info-card">
+          <div class="info-card-icon">🌍</div>
+          <h4>Клиенты</h4>
+          <p>RU · EU · UAE</p>
+          <span>работаем удалённо</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ── CTA ── -->
+<div class="cta-section">
+  <p class="section-label" style="justify-content:center">Старт проекта</p>
+  <h2>Готовы обсудить<br>вашу задачу?</h2>
+  <p>Оставьте заявку, и мы свяжемся с вами в течение одного рабочего дня.</p>
+  <div class="cta-btns">
+    <a href="contact.html" class="btn-primary">Обсудить проект</a>
+    <button class="btn-secondary" onclick="safeOpen('v1')">Написать в чат</button>
+  </div>
+</div>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a href="index.html" class="footer-logo">FORMA<span>.</span></a>
+      <p>Студия цифрового дизайна. Создаём сайты, брендинг и интерфейсы для бизнеса, которому важен результат.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Услуги</h4>
+      <ul>
+        <li><a href="services.html">Веб-дизайн</a></li>
+        <li><a href="services.html">Брендинг</a></li>
+        <li><a href="services.html">Разработка</a></li>
+        <li><a href="services.html">UX-исследования</a></li>
+        <li><a href="services.html">Дизайн-система</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Компания</h4>
+      <ul>
+        <li><a href="about.html">О студии</a></li>
+        <li><a href="portfolio.html">Портфолио</a></li>
+        <li><a href="about.html#team">Команда</a></li>
+        <li><a href="contact.html">Контакты</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Связь</h4>
+      <ul>
+        <li><a href="mailto:hello@forma.studio">hello@forma.studio</a></li>
+        <li><a href="tel:+74951234567">+7 (495) 123-45-67</a></li>
+        <li><a href="#">Telegram</a></li>
+        <li><a href="#">Behance</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2024 FORMA Studio — Студия цифрового дизайна, Москва</p>
+    <div class="footer-social">
+      <a href="#" title="Telegram">✈</a>
+      <a href="#" title="Behance">𝐁</a>
+      <a href="#" title="VC.ru">В</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // ── Widget helpers ──
+  function hasWidget() {
+    return !!(window.RobotMia && typeof window.RobotMia.showChatWindow === 'function');
+  }
+
+  function updateDot() {
+    const dot = document.getElementById('navDot');
+    if (!dot) return;
+    dot.classList.toggle('ok', hasWidget());
+    dot.classList.toggle('err', !hasWidget());
+  }
+
+  function safeOpen(variant) {
+    if (!hasWidget()) {
+      alert('Виджет RobotMia пока не загружен. Подождите секунду и попробуйте снова.');
+      return;
+    }
+    if (variant === 'v2') {
+      window.RobotMia.showChatWindow1();
+    } else {
+      window.RobotMia.showChatWindow();
+    }
+  }
+
+  // Первичная проверка
+  updateDot();
+  // Повторная проверка через 2 с на случай асинхронной загрузки
+  setTimeout(updateDot, 2000);
+</script>
+
+</body>
+</html>

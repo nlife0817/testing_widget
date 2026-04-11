@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Услуги — FORMA Studio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <!-- RobotMIA Widget -->
+  <script src="https://chat-dev.robotmia.ru/api/widget/mB58IG0XsrcY33AKE8PPjbnkeQW4ZOfR"></script>
+</head>
+<body>
+
+<!-- ── НАВИГАЦИЯ ── -->
+<nav class="nav">
+  <a href="index.html" class="nav-logo">FORMA<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="portfolio.html">Портфолио</a></li>
+    <li><a href="services.html" class="active">Услуги</a></li>
+    <li><a href="about.html">О нас</a></li>
+    <li><a href="contact.html">Контакты</a></li>
+  </ul>
+  <div class="nav-divider"></div>
+  <span class="nav-widget-label">Чат</span>
+  <span class="w-dot" id="navDot" style="margin-right:10px"></span>
+  <button class="btn-nav" onclick="safeOpen('v1')" title="showChatWindow()">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+    Чат v1
+  </button>
+  <button class="btn-nav v2" onclick="safeOpen('v2')" style="margin-left:6px" title="showChatWindow1()">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+    Чат v2
+  </button>
+</nav>
+
+<main>
+
+  <div class="page-header">
+    <p class="section-label">Что мы делаем</p>
+    <h1>Услуги</h1>
+    <p>Полный спектр услуг для создания цифровых продуктов — от концепции до запуска и поддержки.</p>
+  </div>
+
+  <!-- ── УСЛУГИ ДЕТАЛЬНО ── -->
+  <section>
+    <div style="display:flex; flex-direction:column; gap:28px;">
+
+      <!-- Веб-дизайн -->
+      <div style="background:var(--card); border:1px solid var(--border); border-radius:var(--r-xl); padding:48px; display:grid; grid-template-columns:1fr 1.4fr; gap:48px; align-items:start; transition:var(--t);" onmouseenter="this.style.borderColor='var(--border2)'" onmouseleave="this.style.borderColor='var(--border)'">
+        <div>
+          <div class="service-icon" style="font-size:28px; width:60px; height:60px; border-radius:16px; margin-bottom:24px">✦</div>
+          <p class="section-label" style="margin-bottom:12px">01</p>
+          <h2 style="font-size:36px; margin-bottom:16px">Веб-дизайн</h2>
+          <p style="font-size:15px; color:var(--muted2); line-height:1.75; margin-bottom:24px">
+            Создаём уникальные интерфейсы с акцентом на конверсию. Каждый экран — это решение бизнес-задачи, оформленное в красивый и понятный интерфейс.
+          </p>
+          <div style="display:flex; gap:8px; flex-wrap:wrap">
+            <span class="tag">Figma</span>
+            <span class="tag">Prototype</span>
+            <span class="tag">UX/UI</span>
+            <span class="tag">Адаптив</span>
+          </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:12px;">
+          <div style="background:var(--card2); border:1px solid var(--border); border-radius:14px; padding:20px 22px;">
+            <h4 style="font-family:var(--f-display); font-size:15px; font-weight:700; color:var(--text); margin-bottom:8px">Что входит</h4>
+            <ul style="list-style:none; display:flex; flex-direction:column; gap:8px;">
+              <li style="font-size:14px; color:var(--muted2); display:flex; gap:8px; align-items:flex-start"><span style="color:var(--accent); flex-shrink:0">✓</span>Анализ конкурентов и аудитории</li>
+              <li style="font-size:14px; color:var(--muted2); display:flex; gap:8px; align-items:flex-start"><span style="color:var(--accent); flex-shrink:0">✓</span>Прототипирование (lo-fi и hi-fi)</li>
+              <li style="font-size:14px; color:var(--muted2); display:flex; gap:8px; align-items:flex-start"><span style="color:var(--accent); flex-shrink:0">✓</span>Дизайн всех страниц сайта</li>
+              <li style="font-size:14px; color:var(--muted2); display:flex; gap:8px; align-items:flex-start"><span style="color:var(--accent); flex-shrink:0">✓</span>Адаптивные версии (desktop/tablet/mobile)</li>
+              <li style="font-size:14px; color:var(--muted2); display:flex; gap:8px; align-items:flex-start"><span style="color:var(--accent); flex-shrink:0">✓</span>Передача макетов разработчикам</li>
+            </ul>
+          </div>
+          <div style="background:var(--card2); border:1px solid var(--border); border-radius:14px; padding:20px 22px; display:flex; align-items:center; justify-content:space-between; gap:12px;">
+            <div>
+              <div style="font-family:var(--f-mono); font-size:10px; color:var(--muted); text-transform:uppercase; letter-spacing:2px; margin-bottom:4px">Стоимость от</div>
+              <div style="font-family:var(--f-display); font-size:28px; font-weight:800; color:var(--text); letter-spacing:-0.8px">120 000 ₽</div>
+            </div>
+            <a href="contact.html" class="btn-primary" style="white-space:nowrap">Заказать</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Брендинг -->
+      <div style="background:var(--card); border:1px solid var(--border); border-radius:var(--r-xl); padding:48px; display:grid; grid-template-columns:1fr 1.4fr; gap:48px; align-items:start; transition:var(--t);" onmouseenter="this.style.borderColor='var(--border2)'" onmouseleave="this.style.borderColor='var(--border)'">
+        <div>
+          <div class="service-icon" style="font-size:28px; width:60px; height:60px; border-radius:16px; margin-bottom:24px; background:rgba(255,94,58,.1); border-color:rgba(255,94,58,.2)">◈</div>
+          <p class="section-label" style="margin-bottom:12px; color:var(--accent2)">02</p>
+          <h2 style="font-size:36px; margin-bottom:16px">Брендинг</h2>
+          <p style="font-size:15px; color:var(--muted2); line-height:1.75; margin-bottom:24px">
+            Разрабатываем фирменный стиль, который работает: запоминается, выделяет и доносит ценности бренда в каждой точке контакта.
+          </p>
+          <div style="display:flex; gap:8px; flex-wrap:wrap">
+            <span class="tag">Логотип</span>
+            <span class="tag">Гайдлайн</span>
+            <span class="tag">Носители</span>
+            <span class="tag">Фирстиль</span>
+          </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:12px;">
+          <div style="background:var(--card2); border:1px solid var(--border); border-radius:14px; padding:20px 22px;">
+            <h4 style="font-family:var(--f-display); font-size:15px; font-weight:700; color:var(--text); margin-bottom:8px">Что входит</h4>
+            <ul style="list-style:none; display:flex; flex-direction:column; gap:8px;">
+              <li style="font-size:14px; color:var(--muted2); display:flex; gap:8px; align-items:flex-start"><span style="color:var(--accent); flex-shrink:0">✓</span>Стратегия позиционирования</li>
+              <li style="font-size:14px; color:var(--muted2); display:flex; gap:8px; align-items:flex-start"><span style="color:var(--accent); flex-shrink:0">✓</span>Разработка логотипа (3 концепции)</li>
+              <li style="font-size:14px; color:var(--muted2); display:flex; gap:8px; align-items:flex-start"><span style="color:var(--accent); flex-shrink:0">✓</span>Цветовая и типографская система</li>
+              <li style="font-size:14px; color:var(--muted2); display:flex; gap:8px; align-items:flex-start"><span style="color:var(--accent); flex-shrink:0">✓</span>Гайдлайн бренда (50+ страниц)</li>
+              <li style="font-size:14px; color:var(--muted2); display:flex; gap:8px; align-items:flex-start"><span style="color:var(--accent); flex-shrink:0">✓</span>Дизайн носителей (визитки, бланки и пр.)</li>
+            </ul>
+          </div>
+          <div style="background:var(--card2); border:1px solid var(--border); border-radius:14px; padding:20px 22px; display:flex; align-items:center; justify-content:space-between; gap:12px;">
+            <div>
+              <div style="font-family:var(--f-mono); font-size:10px; color:var(--muted); text-transform:uppercase; letter-spacing:2px; margin-bottom:4px">Стоимость от</div>
+              <div style="font-family:var(--f-display); font-size:28px; font-weight:800; color:var(--text); letter-spacing:-0.8px">80 000 ₽</div>
+            </div>
+            <a href="contact.html" class="btn-primary" style="white-space:nowrap">Заказать</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Разработка -->
+      <div style="background:var(--card); border:1px solid var(--border); border-radius:var(--r-xl); padding:48px; display:grid; grid-template-columns:1fr 1.4fr; gap:48px; align-items:start; transition:var(--t);" onmouseenter="this.style.borderColor='var(--border2)'" onmouseleave="this.style.borderColor='var(--border)'">
+        <div>
+          <div class="service-icon" style="font-size:22px; width:60px; height:60px; border-radius:16px; margin-bottom:24px; background:rgba(240,195,48,.08); border-color:rgba(240,195,48,.2)">⟨/⟩</div>
+          <p class="section-label" style="margin-bottom:12px; color:var(--accent3)">03</p>
+          <h2 style="font-size:36px; margin-bottom:16px">Разработка</h2>
+          <p style="font-size:15px; color:var(--muted2); line-height:1.75; margin-bottom:24px">
+            Вёрстка и фронтенд-разработка любой сложности. Пишем чистый, семантичный код с отличными показателями производительности.
+          </p>
+          <div style="display:flex; gap:8px; flex-wrap:wrap">
+            <span class="tag">React</span>
+            <span class="tag">Next.js</span>
+            <span class="tag">Vue</span>
+            <span class="tag">TypeScript</span>
+          </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:12px;">
+          <div style="background:var(--card2); border:1px solid var(--border); border-radius:14px; padding:20px 22px;">
+            <h4 style="font-family:var(--f-display); font-size:15px; font-weight:700; color:var(--text); margin-bottom:8px">Что входит</h4>
+            <ul style="list-style:none; display:flex; flex-direction:column; gap:8px;">
+              <li style="font-size:14px; color:var(--muted2); display:flex; gap:8px; align-items:flex-start"><span style="color:var(--accent); flex-shrink:0">✓</span>Семантическая HTML-вёрстка</li>
+              <li style="font-size:14px; color:var(--muted2); display:flex; gap:8px; align-items:flex-start"><span style="color:var(--accent); flex-shrink:0">✓</span>Pixel-perfect реализация макета</li>
+              <li style="font-size:14px; color:var(--muted2); display:flex; gap:8px; align-items:flex-start"><span style="color:var(--accent); flex-shrink:0">✓</span>Оптимизация Core Web Vitals</li>
+              <li style="font-size:14px; color:var(--muted2); display:flex; gap:8px; align-items:flex-start"><span style="color:var(--accent); flex-shrink:0">✓</span>SEO-оптимизация</li>
+              <li style="font-size:14px; color:var(--muted2); display:flex; gap:8px; align-items:flex-start"><span style="color:var(--accent); flex-shrink:0">✓</span>Деплой и настройка хостинга</li>
+            </ul>
+          </div>
+          <div style="background:var(--card2); border:1px solid var(--border); border-radius:14px; padding:20px 22px; display:flex; align-items:center; justify-content:space-between; gap:12px;">
+            <div>
+              <div style="font-family:var(--f-mono); font-size:10px; color:var(--muted); text-transform:uppercase; letter-spacing:2px; margin-bottom:4px">Стоимость от</div>
+              <div style="font-family:var(--f-display); font-size:28px; font-weight:800; color:var(--text); letter-spacing:-0.8px">150 000 ₽</div>
+            </div>
+            <a href="contact.html" class="btn-primary" style="white-space:nowrap">Заказать</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ── ПРОЦЕСС ── -->
+  <section>
+    <p class="section-label">Как мы работаем</p>
+    <h2>Наш процесс</h2>
+    <div class="process-list">
+      <div class="process-item">
+        <div class="process-num">Шаг 01</div>
+        <h3>Брифинг</h3>
+        <p>Знакомимся с задачей, изучаем аудиторию и конкурентов, формулируем цели и метрики успеха.</p>
+      </div>
+      <div class="process-item">
+        <div class="process-num">Шаг 02</div>
+        <h3>Концепция</h3>
+        <p>Предлагаем несколько концептуальных направлений. Вы выбираете то, что резонирует с ценностями бренда.</p>
+      </div>
+      <div class="process-item">
+        <div class="process-num">Шаг 03</div>
+        <h3>Дизайн</h3>
+        <p>Разрабатываем полноценные макеты, интегрируем обратную связь, доводим до финального результата.</p>
+      </div>
+      <div class="process-item">
+        <div class="process-num">Шаг 04</div>
+        <h3>Запуск</h3>
+        <p>Передаём готовый продукт, проводим обучение команды. Остаёмся на связи для поддержки и итераций.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ── ТАРИФЫ ── -->
+  <section>
+    <p class="section-label">Стоимость</p>
+    <h2>Тарифы</h2>
+    <div class="pricing-grid">
+      <div class="pricing-card">
+        <div class="plan-name">Старт</div>
+        <div class="plan-price">от 90<span>тыс ₽</span></div>
+        <div class="plan-sub">Для малого бизнеса и стартапов</div>
+        <ul class="plan-features">
+          <li>Дизайн до 5 страниц</li>
+          <li>Адаптивные версии</li>
+          <li>1 раунд правок</li>
+          <li>Передача в Figma</li>
+          <li>Срок: 2–3 недели</li>
+        </ul>
+        <a href="contact.html" class="btn-secondary" style="display:flex; justify-content:center">Выбрать</a>
+      </div>
+      <div class="pricing-card featured">
+        <div class="plan-name">Бизнес</div>
+        <div class="plan-price">от 250<span>тыс ₽</span></div>
+        <div class="plan-sub">Для среднего и крупного бизнеса</div>
+        <ul class="plan-features">
+          <li>Дизайн до 15 страниц</li>
+          <li>UX-исследование</li>
+          <li>3 раунда правок</li>
+          <li>Компонентная библиотека</li>
+          <li>Дизайн-система в Figma</li>
+          <li>Срок: 4–6 недель</li>
+        </ul>
+        <a href="contact.html" class="btn-primary" style="display:flex; justify-content:center">Выбрать</a>
+      </div>
+      <div class="pricing-card">
+        <div class="plan-name">Энтерпрайз</div>
+        <div class="plan-price">по запросу</div>
+        <div class="plan-sub">Для крупных продуктов и платформ</div>
+        <ul class="plan-features">
+          <li>Неограниченное число страниц</li>
+          <li>Стратегическая сессия</li>
+          <li>Полная UX-методология</li>
+          <li>Разработка под ключ</li>
+          <li>Выделенная команда</li>
+          <li>Поддержка 6 месяцев</li>
+        </ul>
+        <a href="contact.html" class="btn-secondary" style="display:flex; justify-content:center">Обсудить</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ── CTA ── -->
+<div class="cta-section">
+  <p class="section-label" style="justify-content:center">Не нашли нужную услугу?</p>
+  <h2>Расскажите о задаче —<br>предложим решение</h2>
+  <p>Каждый проект уникален. Обсудим детали и подберём формат работы.</p>
+  <div class="cta-btns">
+    <a href="contact.html" class="btn-primary">Отправить запрос</a>
+    <button class="btn-secondary" onclick="safeOpen('v1')">Написать в чат</button>
+  </div>
+</div>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a href="index.html" class="footer-logo">FORMA<span>.</span></a>
+      <p>Студия цифрового дизайна. Создаём сайты, брендинг и интерфейсы для бизнеса, которому важен результат.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Услуги</h4>
+      <ul>
+        <li><a href="services.html">Веб-дизайн</a></li>
+        <li><a href="services.html">Брендинг</a></li>
+        <li><a href="services.html">Разработка</a></li>
+        <li><a href="services.html">UX-исследования</a></li>
+        <li><a href="services.html">Дизайн-система</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Компания</h4>
+      <ul>
+        <li><a href="about.html">О студии</a></li>
+        <li><a href="portfolio.html">Портфолио</a></li>
+        <li><a href="about.html#team">Команда</a></li>
+        <li><a href="contact.html">Контакты</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Связь</h4>
+      <ul>
+        <li><a href="mailto:hello@forma.studio">hello@forma.studio</a></li>
+        <li><a href="tel:+74951234567">+7 (495) 123-45-67</a></li>
+        <li><a href="#">Telegram</a></li>
+        <li><a href="#">Behance</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2024 FORMA Studio — Студия цифрового дизайна, Москва</p>
+    <div class="footer-social">
+      <a href="#" title="Telegram">✈</a>
+      <a href="#" title="Behance">𝐁</a>
+      <a href="#" title="VC.ru">В</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function hasWidget() { return !!(window.RobotMia && typeof window.RobotMia.showChatWindow === 'function'); }
+  function updateDot() {
+    const dot = document.getElementById('navDot');
+    if (!dot) return;
+    dot.classList.toggle('ok', hasWidget());
+    dot.classList.toggle('err', !hasWidget());
+  }
+  function safeOpen(variant) {
+    if (!hasWidget()) { alert('Виджет RobotMia пока не загружен.'); return; }
+    variant === 'v2' ? window.RobotMia.showChatWindow1() : window.RobotMia.showChatWindow();
+  }
+  updateDot(); setTimeout(updateDot, 2000);
+</script>
+
+</body>
+</html>
