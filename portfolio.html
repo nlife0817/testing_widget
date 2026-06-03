@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Портфолио — FORMA Studio</title>
   <script>(function(){const t=localStorage.getItem('forma-theme')||'dark';document.documentElement.setAttribute('data-theme',t);})();</script>
-  <link rel="stylesheet" href="style.css"/>
-  <script defer src="callback.js"></script>
+  <link rel="stylesheet" href="style.css?v=callback-20260603"/>
+  <script defer src="callback.js?v=callback-20260603"></script>
   <!-- RobotMIA Widget -->
   <script src="https://chat-dev.robotmia.ru/api/widget/mB58IG0XsrcY33AKE8PPjbnkeQW4ZOfR"></script>
 </head>
@@ -33,7 +33,7 @@
     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
     Чат v2
   </button>
-  <button class="btn-nav callback-nav" onclick="openCallbackWindow()" style="margin-left:6px" title="openCallbackWindow()">
+  <button type="button" class="btn-nav callback-nav" onclick="openCallbackWindow()" style="margin-left:6px" title="openCallbackWindow()">
     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.32 1.77.59 2.61a2 2 0 0 1-.45 2.11L8 9.69a16 16 0 0 0 6.31 6.31l1.25-1.25a2 2 0 0 1 2.11-.45c.84.27 1.71.47 2.61.59A2 2 0 0 1 22 16.92z"/></svg>
     Обратный звонок
   </button>
@@ -233,7 +233,7 @@
   <p>Расскажите о своей задаче, и мы предложим решение.</p>
   <div class="cta-btns">
     <a href="contact.html" class="btn-primary">Обсудить проект</a>
-    <button class="btn-secondary" onclick="openCallbackWindow()">Обратный звонок</button>
+    <button type="button" class="btn-secondary" onclick="openCallbackWindow()">Обратный звонок</button>
     <button class="btn-secondary" onclick="safeOpen('v1')">Написать в чат</button>
   </div>
 </div>

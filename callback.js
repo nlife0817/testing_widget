@@ -1,6 +1,8 @@
 const CALLBACK_MODAL_ID = 'callbackModal';
+const CALLBACK_STYLE_ID = 'callbackModalBaseStyles';
 
 function createCallbackModal() {
+  injectCallbackBaseStyles();
   if (document.getElementById(CALLBACK_MODAL_ID)) return;
 
   const modal = document.createElement('div');
@@ -35,6 +37,48 @@ function createCallbackModal() {
 
   document.body.appendChild(modal);
   bindCallbackModal(modal);
+}
+
+function injectCallbackBaseStyles() {
+  if (document.getElementById(CALLBACK_STYLE_ID)) return;
+
+  const style = document.createElement('style');
+  style.id = CALLBACK_STYLE_ID;
+  style.textContent = `
+    body.callback-lock { overflow: hidden !important; }
+    .callback-modal {
+      position: fixed !important;
+      inset: 0 !important;
+      z-index: 3000 !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      padding: 24px !important;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .2s cubic-bezier(.4,0,.2,1);
+    }
+    .callback-modal.is-open {
+      opacity: 1 !important;
+      pointer-events: auto !important;
+    }
+    .callback-backdrop {
+      position: absolute !important;
+      inset: 0 !important;
+      background: rgba(3, 6, 12, .72);
+      backdrop-filter: blur(12px);
+    }
+    .callback-dialog {
+      position: relative !important;
+      width: min(100%, 420px) !important;
+      max-height: calc(100vh - 48px);
+      overflow: auto;
+    }
+    @media (max-width: 480px) {
+      .callback-modal { padding: 14px !important; }
+    }
+  `;
+  document.head.appendChild(style);
 }
 
 function bindCallbackModal(modal) {
